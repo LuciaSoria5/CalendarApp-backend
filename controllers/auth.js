@@ -1,4 +1,6 @@
 const { response } = require('express'); // para tener los atajos cuando vas escribiendo
+const bcrypt = require('bcryptjs');
+
 const Usuario = require('../models/Usuario');
 
 const crearUsuario = async(req, res = response ) => {
@@ -16,6 +18,11 @@ const crearUsuario = async(req, res = response ) => {
         }
 
         usuario = new Usuario( req.body ); // creamos el usuario
+
+        // encriptar contraseña
+        const salt = bcrypt.genSaltSync(); // 10 salts
+        usuario.password = bcrypt.hashSync( password, salt );
+
         await usuario.save();
 
         res.status(201).json({
