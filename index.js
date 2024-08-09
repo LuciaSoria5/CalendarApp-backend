@@ -8,6 +8,9 @@ const app = express();
 // Directorio público
 app.use( express.static('public') );
 
+// Lectura y parseo del body
+app.use( express.json() );
+
 // Rutas:   --> localhost:4000/api/auth/loquesea
 app.use( '/api/auth', require('./routes/auth') );
 // TODO: CRUD: Eventos
