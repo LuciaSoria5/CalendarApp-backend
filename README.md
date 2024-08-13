@@ -1,6 +1,6 @@
 # CalendarApp - Backend MERN
 
-La aplicación fue desplegada utilizando GitHub-Pages, y se encuentra disponible en [este link](https://luciasoria5.github.io/GifExpertApp/).
+La aplicación fue desplegada utilizando Railway, y se encuentra disponible en [este link]().
 
 ## Características
 * Base de datos no relacional: MongoDB.
