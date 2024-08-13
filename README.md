@@ -18,12 +18,16 @@ Para ejecutar esta aplicación en tu máquina local, necesitas tener instalado l
    ```bash
    git clone https://github.com/LuciaSoria5/CalendarApp-backend.git
    ```
+   
 2. Navega al directorio del proyecto e instala las dependencias:
     ```bash
    npm install
     ```
+    
 3. Clonar el archivo `.env.template` y renombrarlo a `.env`.
+
 4. Cambiar las variables de entorno de acuerdo a su configuración.
+
 5. Correr el sevidor:
     ```bash
    npm start
