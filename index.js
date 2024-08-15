@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express'); // import express from 'express';
 const dotenv = require('dotenv').config();
 const cors = require('cors');
@@ -23,6 +24,10 @@ app.use( express.json() );
 app.use( '/api/auth', require('./routes/auth') );
 // Rutas:   --> localhost:4000/api/events/loquesea
 app.use( '/api/events', require('./routes/events') );
+
+app.use( '*', ( req, res ) => {
+    res.sendFile( path.join( __dirname, 'public/index.html' ) );
+})
 
 // Escuchar peticiones --> process.env.PORT nos sirve para acceder a las variables de entorno
 app.listen( process.env.PORT , () => { 
