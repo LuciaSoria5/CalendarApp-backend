@@ -1,6 +1,6 @@
 # CalendarApp - Backend MERN
 
-La aplicación fue desplegada utilizando Railway, y se encuentra disponible en [este link](https://calendarapp-backend-luci.up.railway.app/).
+La aplicación fue desplegada utilizando Vercel.
 
 ## Características
 * Base de datos no relacional: MongoDB.
